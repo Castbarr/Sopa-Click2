@@ -1,0 +1,25 @@
+{
+"name": "Sopa-Click: juego sopa de letras",
+"short_name": "Sopa-Click",
+"start_url": "./index.html",
+"display": "fullscreen",
+"description": "juego de sopa de letras desarrollado con Phaser",
+"lang": " es-ES",
+"dir": "auto",
+"theme_color": "#000000",
+"background_color": "#ffffff",
+"orientation": "any",
+"icons": [
+    {
+        "src": "./public/assets/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src": "./public/assets/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }
+]
+
+}
