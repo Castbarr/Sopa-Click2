@@ -1,45 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sopa-Click</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #c3bebe;
-    }
-    #game {
-      width: 100%;
-      height: 100%;
-      max-width: 100vw;
-      max-height: 100vh;
-    }
-  </style>
-  <link rel="manifest" href="manifest.json">
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-          console.log('ServiceWorker registration successful with scope: ', registration.scope);
-        }, function(err) {
-          console.log('ServiceWorker registration failed: ', err);
-        });
-      });
-    }
-  </script>
-  <script src="src/escenarios/node_modules/phaser/dist/phaser.min.js"></script>
-</head>
-<body>
-  <div id="game"></div>
-  <script type="module" src="game.js"></script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="game"></div>
+    <script type="module" src="/src/game.js"></script>
+  </body>
 </html>
